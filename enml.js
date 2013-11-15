@@ -151,7 +151,9 @@
             if(attr[0] == 'height') height = attr[1];
           });
 
-          hash = BodyHashOfENMLHash(hash);
+
+          // For those who want to provide their own md5 hash, comment out this line
+          //hash = BodyHashOfENMLHash(hash);
           var resource = resources[hash];
           
           if(!resource) return;
