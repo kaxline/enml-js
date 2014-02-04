@@ -194,8 +194,9 @@
             writer.writeAttribute('src', resourceUrl);
           }
 
-          if(width) writer.writeAttribute ('width', width);
-          if(height) writer.writeAttribute('height', height);
+          // These are duplicating height and width attributes on images
+//          if(width) writer.writeAttribute ('width', width);
+//          if(height) writer.writeAttribute('height', height);
 
         }	else {
           writer.startElement(elem);
